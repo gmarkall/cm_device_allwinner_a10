@@ -24,9 +24,9 @@ unzip -j -o ../../../${DEVICE}_update.zip lib/modules/hv2605.ko -d ../../../vend
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/egl/libEGL_mali.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/egl/libGLESv1_CM_mali.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/egl/libGLESv2_mali.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-unzip -j -o ../../../${DEVICE}_update.zip system/lib/hw/audio.primary.sun4i.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+unzip -j -o ../../../${DEVICE}_update.zip system/lib/hw/audio.primary.exDroid.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/hw/gralloc.sun4i.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-unzip -j -o ../../../${DEVICE}_update.zip system/lib/hw/hwcomposer.sun4i.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+unzip -j -o ../../../${DEVICE}_update.zip system/lib/hw/hwcomposer.exDroid.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/hw/lights.sun4i.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/hw/sensors.exDroid.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/libMali.so -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
@@ -77,9 +77,9 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libEGL_mali.so:system/lib/egl/libEGL_mali.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/audio.primary.sun4i.so:system/lib/hw/audio.primary.sun4i.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/audio.primary.exDroid.so:system/lib/hw/audio.primary.exDroid.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/gralloc.sun4i.so:system/lib/hw/gralloc.sun4i.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/hwcomposer.sun4i.so:system/lib/hw/hwcomposer.sun4i.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/hwcomposer.exDroid.so:system/lib/hw/hwcomposer.exDroid.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/lights.sun4i.so:system/lib/hw/lights.sun4i.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sensors.exDroid.so:system/lib/hw/sensors.exDroid.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libMali.so:system/lib/libMali.so \\
