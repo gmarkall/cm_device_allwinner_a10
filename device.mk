@@ -78,7 +78,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=131072
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sf.lcd_density=160
+	qemu.sf.lcd_density=160
 
 PRODUCT_CHARACTERISTICS := tablet
 
