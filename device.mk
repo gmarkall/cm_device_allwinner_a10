@@ -58,8 +58,7 @@ PRODUCT_PACKAGES += \
 #PRODUCT_COPY_FILES += \
 
 # Input device calibration files
-PRODUCT_COPY_FILES += \
-	device/allwinner/a10/gt80x.idc:system/usr/idc/gt80x.idc
+#PRODUCT_COPY_FILES += \
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \

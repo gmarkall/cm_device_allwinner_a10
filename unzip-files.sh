@@ -46,6 +46,7 @@ unzip -j -o ../../../${DEVICE}_update.zip system/lib/modules/ump.ko -d ../../../
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/modules/videobuf-core.ko -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/modules/videobuf-dma-contig.ko -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/lib/modules/x_mac.axf -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+unzip -j -o ../../../${DEVICE}_update.zip system/usr/idc/gt80x.idc -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/usr/keylayout/hv_keypad.kl -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/usr/keylayout/sun4i-ir.kl -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 unzip -j -o ../../../${DEVICE}_update.zip system/usr/keylayout/sun4i-keyboard.kl -d ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
@@ -99,6 +100,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/videobuf-core.ko:system/lib/modules/videobuf-core.ko \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/videobuf-dma-contig.ko:system/lib/modules/videobuf-dma-contig.ko \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/x_mac.axf:system/lib/modules/x_mac.axf \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/gt80x.idc:system/usr/idc/gt80x.idc \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/hv_keypad.kl:system/usr/keylayout/hv_keypad.kl \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sun4i-ir.kl:system/usr/keylayout/sun4i-ir.kl \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sun4i-keyboard.kl:system/usr/keylayout/sun4i-keyboard.kl

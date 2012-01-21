@@ -46,6 +46,7 @@ adb pull /system/lib/modules/ump.ko ../../../vendor/$MANUFACTURER/$DEVICE/propri
 adb pull /system/lib/modules/videobuf-core.ko ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/videobuf-core.ko
 adb pull /system/lib/modules/videobuf-dma-contig.ko ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/videobuf-dma-contig.ko
 adb pull /system/lib/modules/x_mac.axf ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/x_mac.axf
+adb pull /system/usr/idc/gt80x.idc ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/gt80x.idc
 adb pull /system/usr/keylayout/hv_keypad.kl ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/hv_keypad.kl
 adb pull /system/usr/keylayout/sun4i-ir.kl ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/sun4i-ir.kl
 adb pull /system/usr/keylayout/sun4i-keyboard.kl ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/sun4i-keyboard.kl
@@ -99,6 +100,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/videobuf-core.ko:system/lib/modules/videobuf-core.ko \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/videobuf-dma-contig.ko:system/lib/modules/videobuf-dma-contig.ko \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/x_mac.axf:system/lib/modules/x_mac.axf \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/gt80x.idc:system/usr/idc/gt80x.idc \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/hv_keypad.kl:system/usr/keylayout/hv_keypad.kl \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sun4i-ir.kl:system/usr/keylayout/sun4i-ir.kl \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sun4i-keyboard.kl:system/usr/keylayout/sun4i-keyboard.kl
