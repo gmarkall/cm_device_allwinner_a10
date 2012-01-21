@@ -15,12 +15,12 @@
 #
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/allwinner/a10/kernel
+LOCAL_KERNEL := device/allwinner/a10gb/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-DEVICE_PACKAGE_OVERLAYS := device/allwinner/a10/overlay
+DEVICE_PACKAGE_OVERLAYS := device/allwinner/a10gb/overlay
 
 PRODUCT_PACKAGES := \
 	audio.a2dp.default \
@@ -29,10 +29,10 @@ PRODUCT_PACKAGES := \
 
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel \
-	device/allwinner/a10/init.sun4i.rc:root/init.sun4i.rc \
-	device/allwinner/a10/ueventd.sun4i.rc:root/ueventd.sun4i.rc \
-	device/allwinner/a10/etc/vold.fstab:system/etc/vold.fstab \
-	device/allwinner/a10/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+	device/allwinner/a10gb/init.sun4i.rc:root/init.sun4i.rc \
+	device/allwinner/a10gb/ueventd.sun4i.rc:root/ueventd.sun4i.rc \
+	device/allwinner/a10gb/etc/vold.fstab:system/etc/vold.fstab \
+	device/allwinner/a10gb/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # Bluetooth configuration files
 #PRODUCT_COPY_FILES += \
@@ -101,4 +101,4 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
 
-$(call inherit-product-if-exists, vendor/allwinner/a10/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/allwinner/a10gb/device-vendor.mk)

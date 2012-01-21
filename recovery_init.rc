@@ -1,7 +1,10 @@
 on early-init
     start ueventd
 
+    insmod /lib/modules/disp.ko
     insmod /lib/modules/hv2605.ko
+    insmod /lib/modules/lcd.ko
+    insmod /lib/modules/sun4i-keyboard.ko
 
 on init
     export PATH /sbin
@@ -32,7 +35,7 @@ on boot
 service ueventd /sbin/ueventd
     critical
 
-service erase_misc /sbin/sh -c "dd if=/dev/zero count=1 | tr '\000' '\377' > /dev/block/nandf; sync"
+service erase_misc /sbin/sh -c "dd if=/dev/zero count=1 | tr '\000' '\377' > /dev/block/nande; sync"
     oneshot
 
 service recovery /sbin/recovery

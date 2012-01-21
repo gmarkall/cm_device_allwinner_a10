@@ -19,7 +19,7 @@
 USE_CAMERA_STUB := true
 
 # Use the non-open-source parts, if they're present
--include vendor/allwinner/a10/BoardConfigVendor.mk
+-include vendor/allwinner/a10gb/BoardConfigVendor.mk
 
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -28,9 +28,9 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_NO_BOOTLOADER := true
 
-BOARD_KERNEL_BASE := 0x40000000
-BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=8
-BOARD_KERNEL_PAGESIZE := 2048
+#BOARD_KERNEL_BASE :=
+#BOARD_KERNEL_CMDLINE :=
+#BOARD_KERNEL_PAGESIZE :=
 #BOARD_NAND_PAGE_SIZE :=
 #BOARD_NAND_SPARE_SIZE :=
 
@@ -38,16 +38,16 @@ TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := exDroid
 TARGET_BOOTLOADER_BOARD_NAME := crane
 
-BOARD_EGL_CFG := device/allwinner/a10/egl.cfg
+BOARD_EGL_CFG := device/allwinner/a10gb/egl.cfg
 
 USE_OPENGL_RENDERER := true
 
 BOARD_USE_SKIA_LCDTEXT := true
 
-TARGET_RECOVERY_INITRC := device/allwinner/a10/recovery_init.rc
-#TARGET_RECOVERY_PRE_COMMAND := "echo -n boot-recovery | busybox dd of=/dev/block/nandf count=1 conv=sync; sync"
+TARGET_RECOVERY_INITRC := device/allwinner/a10gb/recovery_init.rc
+#TARGET_RECOVERY_PRE_COMMAND := "echo -n boot-recovery | busybox dd of=/dev/block/nande count=1 conv=sync; sync"
 #TARGET_RECOVERY_PIXEL_FORMAT := ""
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/allwinner/a10/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/allwinner/a10gb/recovery_keys.c
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
